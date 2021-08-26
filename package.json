@@ -1,0 +1,24 @@
+{
+  "name": "fyfy-token-smart-contract",
+  "version": "1.0.0",
+  "description": "Fyfy ERC20 Token Smart Contract",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "npx truffle compile --all",
+    "flatten": "npx truffle-flattener contracts/* > build/flattened/FyfyToken.sol",
+    "size": "npx truffle run contract-size"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyfyio/fyfy-token.git"
+  },
+  "author": "Markku Nikkanen <markku@fyfy.io>",
+  "license": "MIT",
+  "homepage": "https://github.com/fyfyio/fyfy-token.git#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.0",
+    "truffle": "latest",
+    "truffle-flattener": "https://github.com/jplew/truffle-flattener",
+    "truffle-contract-size": "latest"
+  }
+}
